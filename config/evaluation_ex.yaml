@@ -1,0 +1,8 @@
+output_dir_folder: /home/mena/Documents/PhD/MultiviewCropClassification/outputs
+input_dir_folder: /home/mena/Documents/PhD/MultiviewCropClassification/data
+
+data_name: cropharvest_Kenya_maize #options are cropharvest_Kenya_maize, cropharvest_global_crop, cropharvest_togo-eval_crop
+
+methods_to_plot: null #consider all
+
+plot_runs: False

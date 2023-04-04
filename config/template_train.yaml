@@ -1,0 +1,79 @@
+output_dir_folder: /path/to/output/dir/store/mlflow/and/predictions
+input_dir_folder: /path/to/input/data
+
+data_name: name of the data file, e.g. options cropharvest_Kenya_maize, cropharvest_global_crop, cropharvest_togo-eval_crop
+
+training: 
+  max_epochs: number of epochs to train in each run
+  batch_size: batch size used
+  emb_dim: the dimensions at which the encoder project the data to further prediction
+  early_stop_args: 
+    min_delta: 0.01
+    mode: min
+    patience: 5
+    verbose: True
+experiment: 
+  runs: number of repetitions of each experiment
+  val_size: percentage of validation size for early stopping (between 0-1) 0.1
+  mlflow_runs_exp: if experiments are runs (each run saved individually), otherwise all runs are stored on a single experiment
+  preprocess: 
+    fillnan: False
+    flatten: False
+    form: zscore
+      
+view_names: ["S2","S1","weather", "VI", "DEM"] #all views, but you could select some of them to be used
+
+
+
+###### FOR SINGLEVIEW TRAINING ######
+architecture:
+  encoders: the encoder architecture that will be used for all views
+    model_type: type of neural network to use, options are 'rnn', 'gru', 'lstm', 'mlp'
+    n_layers: number of layers 
+    layer_size: hidden dimension size
+    dropout: value of dropout
+    batchnorm: whether to use BN on all fully connected layers or not
+  predictive_model: the architecture mounted at the top of the encoders that gives the final decision
+    n_layers: number of layers
+    layer_size: hidden dimension size
+    dropout: value of dropout
+    batchnorm: whether to use BN on all fully connected layers or not
+
+
+
+###### FOR SINGLEVIEW-POOL TRAINING ######
+architecture:
+  encoders: the encoder architecture for each view, with same options as defined above
+    S1:
+      model_type: should be a recurrent-based NN
+      ...
+    S2: 
+      model_type: should be a recurrent-based NN
+      ...
+    weather: 
+      model_type: should be a recurrent-based NN
+      ...
+    VI: 
+      model_type: should be a recurrent-based NN
+      ...
+    DEM: 
+      model_type: mlp
+      ...
+  predictive_model: same as showed above
+
+
+####### FOR MULTIVIEW TRAINING #######
+architecture: same as for singleview-pool
+method: #fusion method
+  feature: True indicates Feature-level fusion and False indicates Decision-level fusion
+  agg_args:
+    mode: the way the features will be merged options are 'sum', 'prod', 'max', 'concat'
+    #the following are only available with Feature-level
+    adaptive: boolean whether to use adaptive fusion (gated modules)
+    features: boolean whether to use one gated module for each feature in the fusion
+
+training: 
+  ... previous commands
+  loss_args: 
+    multi: boolean whether to set multi loss model or not
+    weights_loss: a numerical value indicating the weight of the additional loss

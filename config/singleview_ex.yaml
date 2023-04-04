@@ -1,0 +1,37 @@
+output_dir_folder: /home/mena/Documents/PhD/MultiviewCropClassification/outputs
+input_dir_folder: /home/mena/Documents/PhD/MultiviewCropClassification/data
+
+data_name: cropharvest_togo-eval_crop
+
+training: 
+  max_epochs: 1000
+  batch_size: 256
+  emb_dim: 64 
+  early_stop_args: 
+    min_delta: 0.01
+    mode: min
+    patience: 5
+    verbose: True
+experiment: 
+  runs: 10 
+  val_size: 0.1
+  mlflow_runs_exp: True 
+  preprocess: 
+    fillnan: False
+    flatten: False
+    form: zscore
+      
+view_names: ["S2","S1","weather", "VI"]
+
+architecture:
+  encoders: 
+    model_type: gru
+    n_layers: 2
+    layer_size: 64
+    dropout: 0.2
+    batchnorm: False
+  predictive_model:
+    n_layers: 1
+    layer_size: 64
+    dropout: 0.2
+    batchnorm: True
