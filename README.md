@@ -42,7 +42,18 @@ The data used comes from https://github.com/nasaharvest/cropharvest. However we 
 Public repository of our IGARSS 2023 submission.
 
 ## Citation
-Not yet..
+Mena, F., et al. "A Comparative Assessment of Multi-view Fusion Learning For Crop Classification." IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium* (2023).
+
+> Bibtex
+```
+@inproceedings{mena2023comparativeassessmentmultiview,
+  title = {A {{Comparative Assessment}} of {{Multi-view Fusion Learning For Crop Classification}}},
+  booktitle = {{{IGARSS}} 2023 - 2023 {{IEEE International Geoscience}} and {{Remote Sensing Symposium}}},
+  author = {Mena, Francisco and Arenas, Diego and Nuske, Marlon and Dengel, Andreas},
+  date = {2023},
+  publisher = {{IEEE}}
+```
+
 
 ## Licence
 Copyright (C) 2022  authors of this github.
