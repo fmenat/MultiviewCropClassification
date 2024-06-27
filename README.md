@@ -58,7 +58,8 @@ Mena, Francisco, et al. "*A comparative assessment of multi-view fusion learning
   booktitle = {{{IGARSS}} 2023 - 2023 {{IEEE International Geoscience}} and {{Remote Sensing Symposium}}},
   author = {Mena, Francisco and Arenas, Diego and Nuske, Marlon and Dengel, Andreas},
   date = {2023},
-  publisher = {{IEEE}}
+  publisher = {{IEEE}},
+  doi={10.1109/IGARSS52108.2023.10282138}
 }
 ```
 
