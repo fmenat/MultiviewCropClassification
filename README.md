@@ -1,4 +1,6 @@
 # MultiviewCropClassification
+<a href="https://github.com/fmenat/mvlearning">  <img src="https://img.shields.io/badge/Package-mvlearning-blue"/>  </a> [![paper](https://img.shields.io/badge/arXiv-2308.05407-D12424)](https://www.arxiv.org/abs/2308.05407) 
+
 Code used for the crop classification (CropHarvest) based on multi-view data fusion
 
 
@@ -35,38 +37,28 @@ pip install torch torchvision torchaudio --extra-index-url https://download.pyto
 ```
 
 ## Data
-The data used comes from https://github.com/nasaharvest/cropharvest. However we also share the structures that we used on Google Drive: https://drive.google.com/drive/folders/1aPlctAL8B5dXSdpM55fr3-RUmAHO3quj
+The data used comes from https://github.com/nasaharvest/cropharvest. However, we also share the structures that we used on Google Drive: https://drive.google.com/drive/folders/1aPlctAL8B5dXSdpM55fr3-RUmAHO3quj
 
 
-## Source
-Public repository of our IGARSS 2023 submission.
 
-## Citation
-Mena, F., et al. "A Comparative Assessment of Multi-view Fusion Learning For Crop Classification." IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium* (2023).
+# :scroll: Source
 
-> Bibtex
-```
+Public repository of our IGARSS 2023 paper.
+* :lock: [Final published version](https://doi.org/10.1109/IGARSS52108.2023.10282138)
+* :unlock: [Arxiv](https://arxiv.org/abs/2308.05407)
+* [Presentation](https://github.com/fmenat/fmenat/blob/main/presentations/2023_IGARSS_MVC.pdf)
+
+
+# 🖊️ Citation
+
+Mena, Francisco, et al. "*A comparative assessment of multi-view fusion learning for crop classification.*" IGARSS 2023-2023 IEEE International Geoscience and Remote Sensing Symposium. IEEE, 2023.
+```bibtex
 @inproceedings{mena2023comparativeassessmentmultiview,
   title = {A {{Comparative Assessment}} of {{Multi-view Fusion Learning For Crop Classification}}},
   booktitle = {{{IGARSS}} 2023 - 2023 {{IEEE International Geoscience}} and {{Remote Sensing Symposium}}},
   author = {Mena, Francisco and Arenas, Diego and Nuske, Marlon and Dengel, Andreas},
   date = {2023},
   publisher = {{IEEE}}
+}
 ```
 
-
-## Licence
-Copyright (C) 2022  authors of this github.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
