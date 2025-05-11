@@ -1,5 +1,10 @@
 # MultiviewCropClassification
-<a href="https://github.com/fmenat/mvlearning">  <img src="https://img.shields.io/badge/Package-mvlearning-blue"/>  </a> [![paper](https://img.shields.io/badge/arXiv-2308.05407-D12424)](https://www.arxiv.org/abs/2308.05407) 
+<a href="https://github.com/fmenat/mvlearning">  <img src="https://img.shields.io/badge/Package-mvlearning-blue"/>  </a>
+[![paper](https://img.shields.io/badge/arXiv-2308.05407-D12424)](https://www.arxiv.org/abs/2308.05407) 
+[![DOI:10.1109/IGARSS52108.2023.10282138](http://img.shields.io/badge/DOI-10.1109/IGARSS52108.2023.10282138-blue.svg)](https://doi.org/10.1109/IGARSS52108.2023.10282138)
+
+> Public repository of our work [*A comparative assessment of multi-view fusion learning for crop classificatio*](https://doi.org/10.1109/IGARSS52108.2023.10282138)
+---
 
 Code used for the crop classification (CropHarvest) based on multi-view data fusion
 
@@ -41,15 +46,7 @@ The data used comes from https://github.com/nasaharvest/cropharvest. However, we
 
 
 
-# :scroll: Source
-
-Public repository of our IGARSS 2023 paper.
-* :lock: [Final published version](https://doi.org/10.1109/IGARSS52108.2023.10282138)
-* :unlock: [Arxiv](https://arxiv.org/abs/2308.05407)
-* [Presentation](https://github.com/fmenat/fmenat/blob/main/presentations/2023_IGARSS_MVC.pdf)
-
-
-# 🖊️ Citation
+# 🖊️ Citation and more
 
 Mena, Francisco, et al. "*A comparative assessment of multi-view fusion learning for crop classification.*" IGARSS 2023-2023 IEEE International Geoscience and Remote Sensing Symposium. IEEE, 2023.
 ```bibtex
@@ -62,4 +59,5 @@ Mena, Francisco, et al. "*A comparative assessment of multi-view fusion learning
   doi={10.1109/IGARSS52108.2023.10282138}
 }
 ```
-
+> [!NOTE]
+> * [Presentation](https://github.com/fmenat/fmenat/blob/main/presentations/2023_IGARSS_MVC.pdf)
